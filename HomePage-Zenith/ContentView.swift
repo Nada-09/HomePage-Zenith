@@ -163,11 +163,15 @@ struct ContentView: View {
                                     .foregroundColor(Color.green)
                                     .multilineTextAlignment(.center)
                                 
-                                
-                                Text("Let’s make today a productive one ")
+               
+                                Text("Let’s make today a productive one")
                                     .font(.body)
+                                    .fixedSize(horizontal: false, vertical: true)
                                     .fontWeight(.medium)
                                     .multilineTextAlignment(.center)
+                                    
+                                    
+                                    
                                 
                                 Spacer()
                                 
@@ -191,7 +195,6 @@ struct ContentView: View {
                                 Spacer()
                                 VStack{
                                     Text("Days")
-                                    
                                         .font(.title3)
                                         .fontWeight(.semibold)
                                         .multilineTextAlignment(.leading)
@@ -226,10 +229,6 @@ struct ContentView: View {
                     }
                     .navigationTitle("Zenith")
                     .searchable(text: $search, prompt: "Search")
-            
-        
-
-           
                     
                 }
             }
