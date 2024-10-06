@@ -12,8 +12,7 @@ struct ContentView: View {
     @State var search: String = ""
     @State var isPresented: Bool = false
     @State var searching: Bool = false
-
-    
+ 
     var body: some View {
         NavigationStack {
 
@@ -31,13 +30,13 @@ struct ContentView: View {
                                 Spacer()
                                 
                                 Text("0")
+                                
                                     .font(.title2)
                                     .fontWeight(.semibold)
                             }
                             .padding()
-                            .foregroundColor(.white)
                             .frame(width: 180,height:55)
-                            .background(.gray)
+                            .background(Color(hue: 0.667, saturation: 0.056, brightness: 0.164))
                             .cornerRadius(10)
                             
                             HStack{
@@ -57,7 +56,7 @@ struct ContentView: View {
                             .padding()
                             .foregroundColor(.white)
                             .frame(width: 180,height:55)
-                            .background(.gray)
+                            .background(Color(hue: 0.667, saturation: 0.056, brightness: 0.164))
                             .cornerRadius(10)
                         }
                             
@@ -80,11 +79,11 @@ struct ContentView: View {
                             .padding()
                             .foregroundColor(.white)
                             .frame(width: 180,height:55)
-                            .background(.gray)
+                            .background(Color(hue: 0.667, saturation: 0.056, brightness: 0.164))
                             .cornerRadius(10)
                             
                             HStack{
-                                Image(systemName: "checkmark.circle.fill")
+                                Image(systemName: "checkmark")
                                     .font(.title2)
                                 
                                 Text("Done")
@@ -108,7 +107,7 @@ struct ContentView: View {
                         
                         HStack{
                             HStack{
-                                Image(systemName: "trash.circle.fill")
+                                Image(systemName: "trash")
                                     .font(.title2)
                                 
                                 Text("Deleted")
@@ -124,7 +123,7 @@ struct ContentView: View {
                             .padding()
                             .foregroundColor(.white)
                             .frame(width: 180,height:55)
-                            .background(.gray)
+                            .background(Color(hue: 0.667, saturation: 0.056, brightness: 0.164))
                             .cornerRadius(10)
                             
                             HStack{
@@ -140,7 +139,7 @@ struct ContentView: View {
                             .padding()
                             .foregroundColor(.white)
                             .frame(width: 180,height:55)
-                            .background(.gray)
+                            .background(Color(red: 0.155, green: 0.155, blue: 0.164))
                             .cornerRadius(10)
                         }
                         
@@ -163,15 +162,12 @@ struct ContentView: View {
                                     .foregroundColor(Color.green)
                                     .multilineTextAlignment(.center)
                                 
-               
+                                
                                 Text("Let’s make today a productive one")
                                     .font(.body)
                                     .fixedSize(horizontal: false, vertical: true)
                                     .fontWeight(.medium)
                                     .multilineTextAlignment(.center)
-                                    
-                                    
-                                    
                                 
                                 Spacer()
                                 
@@ -182,19 +178,12 @@ struct ContentView: View {
                             .padding()
                             .foregroundColor(.white)
                             .frame(width: 180,height:150)
-                            .background(.gray)
-                            .cornerRadius(10)
                             
+                            .cornerRadius(10)
+                            VStack{
                             HStack{
-                             
-                                
-                                Text("20")
-                                    .font(.largeTitle)
-                                    .fontWeight(.bold)
-                                
-                                Spacer()
                                 VStack{
-                                    Text("Days")
+                                    Text("Days    ")
                                         .font(.title3)
                                         .fontWeight(.semibold)
                                         .multilineTextAlignment(.leading)
@@ -204,18 +193,50 @@ struct ContentView: View {
                                         .fontWeight(.semibold)
                                         .multilineTextAlignment(.leading)
                                 }
+                                Spacer()
+                                
+                                Text("20")
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                
                             }
                             .padding()
                             .foregroundColor(.white)
-                            .frame(width: 180,height:65)
+                            .frame(width: 180,height:71)
+                            .background(.gray)
+                            .cornerRadius(10)
+                            
+                            HStack{
+                                VStack{
+                                    Text("Days    ")
+                                        .font(.title3)
+                                        .fontWeight(.semibold)
+                                        .multilineTextAlignment(.leading)
+                                    
+                                    Text("Total   ")
+                                        .font(.title2)
+                                        .fontWeight(.semibold)
+                                        .multilineTextAlignment(.leading)
+                                }
+                                Spacer()
+                                
+                                Text("20")
+                                    .font(.largeTitle)
+                                    .fontWeight(.bold)
+                                
+                            }
+                            .padding()
+                            .foregroundColor(.white)
+                            .frame(width: 180,height:71)
                             .background(.gray)
                             .cornerRadius(10)
                         }
-                            Spacer()
-                            
+                        }
+                        
+                        Spacer()
                         
                         
-                        
+    
                         
                         
                             Button{

@@ -32,6 +32,9 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8AE26D852CB15DB600E9C8CC /* HomePage-Zenith */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFolders = (
+				ACHAIEVMENTS,
+			);
 			path = "HomePage-Zenith";
 			sourceTree = "<group>";
 		};
